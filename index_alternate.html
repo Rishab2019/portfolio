@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"/>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
     <title>Portfolio</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css"/>
-    <link rel="stylesheet" href="assets/css/portfolio.css"/>
-    <link rel="stylesheet" href="assets/css/owl.css"/>
-    <link rel="stylesheet" href="assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/portfolio_alternate.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
 	<style>
     .st0{fill:none;stroke:black;stroke-miterlimit:10}
     svg{
@@ -47,21 +45,25 @@ path{
   
 }
 
-
-
   </style>
   </head>
 
-  <body>
+  <body style="
+    /* background-image: url('assets/images/bodybg.jpg'); */
+    background: #217785e8;
+    /* background-size: 90% 400%; */
+    ">
     <div id="page-wraper">
       <!-- Sidebar Menu -->
-      <div class="responsive-nav">
+      <div class="responsive-nav" style="
+    background: antiquewhite;
+">
         <i class="fa fa-bars" id="menu-toggle"></i>
         <div id="menu" class="menu" style="background: url(assets/images/ssbg.png); background-position: top right; box-shadow: 0px 0px 1px;">
           <i class="fa fa-times" id="menu-close"></i>
           <div class="container">
             <div class="image">
-              <a href="#"><img src="assets/images/Rishabimg.jpg" alt="" /></a>
+              <a href="#"><img src="assets/images/Rishabimg.jpg" alt=""></a>
             </div>
             <div class="author-content">
               <h4>Rishab Tyagi</h4>
@@ -69,10 +71,10 @@ path{
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">What I’m good at</a></li>
-                <li><a href="#section3">My Work</a></li>
-                <li><a href="#section4">Contact Me</a></li>
+                <li class=""><a href="#section1">About Me</a></li>
+                <li class="active"><a href="#section2">What I’m good at</a></li>
+                <li class=""><a href="#section3">My Work</a></li>
+                <li class=""><a href="#section4">Contact Me</a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -96,15 +98,16 @@ path{
         </div>
       </div>
 
-      <section class="section about-me" data-section="section1">
+      <section class="section about-me" data-section="section1" style="
+    background: #89775f;
+    filter: drop-shadow(2px 4px 6px black);
+">
         <div class="container">
           <div class="section-heading">
             <h2>About Me</h2>
            	<div class="app">
 					<h1 class="front-end">Hello, I am a front-end
-						<div class="typewrite" data-period="2000" data-type='[ "Developer","Designer" ]'>
-						<span class="wrap"></span>
-						</div>
+						<div class="typewrite" data-period="2000" data-type="[ &quot;Developer&quot;,&quot;Designer&quot; ]"><span class="wrap"></span></div>
 					</h1>
 				</div>
 				<div class="bulb" style="width: 50px; height: 50px; <!-background: linear-gradient(70deg,snow,#ffffff96)-!>;background: linear-gradient(90deg,gold 10%,yellow 80%); border-radius: 50%; box-shadow: 0px 0px 50px 0px;"></div>
@@ -117,14 +120,14 @@ path{
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="right-text" data-tilt>
+                <div class="right-text">
                   <h4>A bit about me</h4>
                   <p>
                     Hello there! I'm Rishab, a front-end web developer.I have a deep understanding of front-end design principles.I am very comfortable with the core technologies HTML, CSS, JavaScript and Bootstrap.I have just completed my BTECH degree and I have also developed an android app.I love designing websites.I'm best known as a tech guru in my collegues.
                   </p>
 				  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 1080" xml:space="preserve">
   
-  <path class="st0" d="M683.26 590.28a1422.287 1422.287 0 01-11.55-246.47c.5-12.35 2.19-26.59 12.56-33.31 11.19-7.25 26.52-1.39 36.28 7.69 27.11 25.2 27.9 67.31 24.7 104.18-2.69 30.96-10.14 66.7-38.01 80.45-8.75 4.32-19.96 5.6-27.81-.19-7.85-5.79-8.65-20.11.12-24.38a720.332 720.332 0 0059.27 85.99c7.27 9.06 16.23 18.7 27.84 18.95 14.29.31 24.82-14.24 27.29-28.32s-.37-28.59 1.05-42.81c-.03 15.93-.06 31.87-.1 47.8-.01 5 .02 10.19 2.16 14.71 4.45 9.38 16.98 12.63 26.89 9.57 9.92-3.06 17.61-10.85 24.15-18.91 10.1-12.44 18.92-27.61 17.13-43.53-1.78-15.92-18.83-30.44-33.6-24.22 13.03 9.47 29.73 11.86 45.67 14.11 15.95 2.25 32.67 4.99 45.32 14.95 12.66 9.96 19.18 29.62 9.61 42.58-7.54 10.21-21.75 12.66-34.44 12.45-13.83-.23-31.07-6.16-31.85-19.98 7.05-5.36 17.19.65 22.57 7.68 5.38 7.03 10.04 15.92 18.62 18.12 9.98 2.56 19.52-5.53 25.34-14.03 18.15-26.52 19.59-60.66 20.41-92.79 1.16-45.66 2.33-91.32 3.49-136.98-.21 41.97-1.53 83.93-3.94 125.83 18.52 7.78 40.39 7.15 58.43-1.67-9.16 28.55-10.67 59.52-4.32 88.83 2.41 11.13 7.63 23.7 18.71 26.37 10.48 2.52 20.98-5.79 25.26-15.67s4.12-21.02 5.01-31.76c1.29-15.57 5.23-31.5 15.04-43.66 9.81-12.16 26.52-19.66 41.5-15.2 11.21 3.34 20.46 17.17 13.69 26.72-8.51 12.01-28.32 2.82-41.73 8.91-12.16 5.52-14.99 21.49-14.23 34.82.87 15.24 4.95 31.5 16.72 41.22 11.77 9.72 32.81 8.65 39.43-5.1 2.66-5.52 2.62-11.9 2.43-18.02-.57-17.48-2.05-34.93-4.45-52.26-2.33 19.41 1.68 39.53 11.28 56.56 3.3 5.86 9.29 12.11 15.65 9.91 2.74-.95 4.73-3.3 6.41-5.67 13-18.34 15.2-42.05 15.59-64.52.72-42.2-3.48-84.48-12.49-125.71 9.2 57.51 13.85 115.75 13.88 174 .01 13.3-.14 27.03 4.97 39.31 18.31-13.1 34.99-31.18 38.11-53.47 3.13-22.29-12.73-47.88-35.24-48.16-6.62 14.35 7.25 32.2 23.03 32.91s29.91-11.73 35.64-26.45c5.73-14.72 4.67-31.18 2.17-46.78 4.1 59.17.23 118.88-11.46 177.03-1.42 7.05-3.05 14.3-7.29 20.11-4.56 6.23-11.66 10.12-18.88 12.86-21.46 8.16-45.07 7.82-68.01 7.37-158.87-3.11-317.84-6.23-476.31-17.92-13.32-.98-27.39-2.29-38.19-10.15-5.73-4.17-10.1-9.91-14.04-15.8-36.67-54.84-39.99-124.65-42.13-190.59-1.69-52.15-3.15-105.8 14.7-154.83 6.74-18.53 16.4-36.37 30.7-49.94 14.14-13.42 32.11-22.06 50.32-29.01 84.68-32.36 181.5-31.73 265.75 1.74 75.13 29.85 140.25 84.46 219.07 102.42 31.21 7.11 66.96 7.16 91.76-13.07 12.8-10.44 21.51-25.75 23.94-42.08 M795.06 479.67c.05-1.33.09-2.66.14-4"/>
+  <path class="st0" d="M683.26 590.28a1422.287 1422.287 0 01-11.55-246.47c.5-12.35 2.19-26.59 12.56-33.31 11.19-7.25 26.52-1.39 36.28 7.69 27.11 25.2 27.9 67.31 24.7 104.18-2.69 30.96-10.14 66.7-38.01 80.45-8.75 4.32-19.96 5.6-27.81-.19-7.85-5.79-8.65-20.11.12-24.38a720.332 720.332 0 0059.27 85.99c7.27 9.06 16.23 18.7 27.84 18.95 14.29.31 24.82-14.24 27.29-28.32s-.37-28.59 1.05-42.81c-.03 15.93-.06 31.87-.1 47.8-.01 5 .02 10.19 2.16 14.71 4.45 9.38 16.98 12.63 26.89 9.57 9.92-3.06 17.61-10.85 24.15-18.91 10.1-12.44 18.92-27.61 17.13-43.53-1.78-15.92-18.83-30.44-33.6-24.22 13.03 9.47 29.73 11.86 45.67 14.11 15.95 2.25 32.67 4.99 45.32 14.95 12.66 9.96 19.18 29.62 9.61 42.58-7.54 10.21-21.75 12.66-34.44 12.45-13.83-.23-31.07-6.16-31.85-19.98 7.05-5.36 17.19.65 22.57 7.68 5.38 7.03 10.04 15.92 18.62 18.12 9.98 2.56 19.52-5.53 25.34-14.03 18.15-26.52 19.59-60.66 20.41-92.79 1.16-45.66 2.33-91.32 3.49-136.98-.21 41.97-1.53 83.93-3.94 125.83 18.52 7.78 40.39 7.15 58.43-1.67-9.16 28.55-10.67 59.52-4.32 88.83 2.41 11.13 7.63 23.7 18.71 26.37 10.48 2.52 20.98-5.79 25.26-15.67s4.12-21.02 5.01-31.76c1.29-15.57 5.23-31.5 15.04-43.66 9.81-12.16 26.52-19.66 41.5-15.2 11.21 3.34 20.46 17.17 13.69 26.72-8.51 12.01-28.32 2.82-41.73 8.91-12.16 5.52-14.99 21.49-14.23 34.82.87 15.24 4.95 31.5 16.72 41.22 11.77 9.72 32.81 8.65 39.43-5.1 2.66-5.52 2.62-11.9 2.43-18.02-.57-17.48-2.05-34.93-4.45-52.26-2.33 19.41 1.68 39.53 11.28 56.56 3.3 5.86 9.29 12.11 15.65 9.91 2.74-.95 4.73-3.3 6.41-5.67 13-18.34 15.2-42.05 15.59-64.52.72-42.2-3.48-84.48-12.49-125.71 9.2 57.51 13.85 115.75 13.88 174 .01 13.3-.14 27.03 4.97 39.31 18.31-13.1 34.99-31.18 38.11-53.47 3.13-22.29-12.73-47.88-35.24-48.16-6.62 14.35 7.25 32.2 23.03 32.91s29.91-11.73 35.64-26.45c5.73-14.72 4.67-31.18 2.17-46.78 4.1 59.17.23 118.88-11.46 177.03-1.42 7.05-3.05 14.3-7.29 20.11-4.56 6.23-11.66 10.12-18.88 12.86-21.46 8.16-45.07 7.82-68.01 7.37-158.87-3.11-317.84-6.23-476.31-17.92-13.32-.98-27.39-2.29-38.19-10.15-5.73-4.17-10.1-9.91-14.04-15.8-36.67-54.84-39.99-124.65-42.13-190.59-1.69-52.15-3.15-105.8 14.7-154.83 6.74-18.53 16.4-36.37 30.7-49.94 14.14-13.42 32.11-22.06 50.32-29.01 84.68-32.36 181.5-31.73 265.75 1.74 75.13 29.85 140.25 84.46 219.07 102.42 31.21 7.11 66.96 7.16 91.76-13.07 12.8-10.44 21.51-25.75 23.94-42.08 M795.06 479.67c.05-1.33.09-2.66.14-4"></path>
 </svg>
 
 
@@ -143,15 +146,17 @@ path{
             </div>
           </div>
         </div>
-      </section>
+      </div></section>
 
-      <section class="section my-services" data-section="section2">
+      <section class="section my-services" data-section="section2" style="
+    background: linear-gradient(90deg, #208ac7, #016584);
+    filter: drop-shadow(2px 4px 6px black);
+">
         <div class="container">
           <div class="section-heading">
             <h2>What I’m good at?</h2>
             <div class="line-dec"></div>
-            <span
-              >I've been learning web development for about 1 year now and I'm always eager to learn more in this fast paced industry.</span>
+            <span>I've been learning web development for about 1 year now and I'm always eager to learn more in this fast paced industry.</span>
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -194,7 +199,10 @@ path{
         </div>
       </section>
 
-      <section class="section my-work" data-section="section3">
+      <section class="section my-work" data-section="section3" style="
+    background: linear-gradient(45deg, #746c6c, transparent);
+    filter: drop-shadow(2px 4px 6px black);
+">
         <div class="container">
           <div class="section-heading">
             <h2>My Work</h2>
@@ -204,22 +212,21 @@ path{
           <div class="row">
             <div class="isotope-wrapper">
               <form class="isotope-toolbar">
-                <label><input type="radio" data-type="*" checked="" name="isotope-filter"/>
+                <label><input type="radio" data-type="*" checked="" name="isotope-filter">
                   <span>all</span></label>
-                <label><input type="radio" data-type="company" name="isotope-filter"/>
+                <label><input type="radio" data-type="company" name="isotope-filter">
                   <span>Company projects</span></label>
-                <label><input type="radio" data-type="college" name="isotope-filter"/>
+                <label><input type="radio" data-type="college" name="isotope-filter">
                   <span>College project</span></label>
-                <label><input type="radio" data-type="personal" name="isotope-filter"/>
+                <label><input type="radio" data-type="personal" name="isotope-filter">
                   <span>Personal projects</span></label>
               </form>
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="college">
+              <div class="isotope-box" style="position: relative; height: 774.55px;">
+                <div class="isotope-item" data-type="college" style="position: absolute; left: 0px; top: 0px;">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio-01.png" alt="sq-sample26"/>
+                    <img src="assets/images/portfolio-01.png" alt="sq-sample26">
                     <figcaption>
-                      <a
-                        href="assets/images/portfolio-01.png">
+                      <a href="assets/images/portfolio-01.png">
 						<i class="fa fa-search" onclick="location.href='https://plantae-store.herokuapp.com/'; return false;">VISIT</i></a>
                       <h4>Plantae Store</h4>
                       <span>The idea behind this project is to connect all the local nurseries with the customers and deliver the plants to the customer from their nearest nursery.The tech stack used is node js, express and mongo DB.</span>
@@ -227,12 +234,11 @@ path{
                   </figure>
                 </div>
 				
-				<div class="isotope-item" data-type="company">
+				<div class="isotope-item" data-type="company" style="position: absolute; left: 464px; top: 0px;">
                   <figure class="snip1321">
-                    <img src="assets/images/kv.jpg" alt="sq-sample26"/>
+                    <img src="assets/images/kv.jpg" alt="sq-sample26">
                     <figcaption>
-                      <a
-                        href="assets/images/kv.jpg">
+                      <a href="assets/images/kv.jpg">
 						<i class="fa fa-search" onclick="location.href='https://rishab2019.github.io/kvschool/index.html'; return false;">VISIT</i></a>
                       <h4>Kendriya Vidyalya</h4>
                       <span>This is a static website in HTML, CSS, JAVASCRIPT which is being developed by me.This is my current project.</span>
@@ -240,12 +246,11 @@ path{
                   </figure>
                 </div>
 				
-				<div class="isotope-item" data-type="personal">
+				<div class="isotope-item" data-type="personal" style="position: absolute; left: 0px; top: 387px;">
                   <figure class="snip1321">
-                    <img src="assets/images/styledmenu.png" alt="sq-sample26"/>
+                    <img src="assets/images/styledmenu.png" alt="sq-sample26">
                     <figcaption>
-                      <a
-                        href="assets/images/styledmenu.png">
+                      <a href="assets/images/styledmenu.png">
 						<i class="fa fa-search" onclick="location.href='https://codepen.io/Rishab2019/full/qBbqGPX'; return false;">VISIT</i></a>
                       <h4>Stylish Menu</h4>
                       <span>This is a stylish menu made designed using html and css only.This is a mockup only.</span>
@@ -271,7 +276,10 @@ path{
         </div>
       </section>
 
-      <section id="s4" class="section contact-me" data-section="section4">
+      <section id="s4" class="section contact-me" data-section="section4" style="
+    background: #0b2836;
+    filter: drop-shadow(2px 4px 6px black);
+">
         <div class="container">
           <div class="section-heading">
             <h2>Contact Me</h2>
@@ -285,50 +293,22 @@ path{
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
                       </fieldset>
                     </div>
                     <div class="col-md-6">
                       <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
+                        <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required="">
                       </fieldset>
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
+                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
                       </fieldset>
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
                       </fieldset>
                     </div>
                     <div class="col-md-12">
@@ -351,7 +331,7 @@ path{
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery/tilt.jquery.js"></script>
+    <script src="vendor/vanilla-tilt/vanilla-tilt.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
@@ -466,7 +446,7 @@ var TxtType = function(el, toRotate, period) {
       $(window).scroll(function() {
         checkSection();
       });
-	  
     </script>
-  </body>
-</html>
+  
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><style type="text/css">.typewrite > .wrap { border-right: 0.08em solid #fff}</style></body></html>
