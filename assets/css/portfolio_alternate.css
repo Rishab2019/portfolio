@@ -4,9 +4,6 @@
 body {
     font-family: 'Lato', sans-serif;
     
-  //background-image: url('assets/images/bodybg.jpg');
-  //background-size: 90% 400%;
-    background: linear-gradient(90deg, #20b0c7, #2ea5a1);
 }
 
 
@@ -314,13 +311,19 @@ html {
 
 .section {
     color: #fff;
-    width: 55%;
-    right: 10%;
-    left: 35%;
+    width: 79%;
+    /* right: 10%; */
+    left: 20%;
     position: relative;
     min-height: 100vh;
     padding-bottom: 80px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+}
+@media screen and (max-width: 1280px) and (min-width: 845px){
+.section {
+    left: 25%;
+    width: 74%;
+}
 }
 
 .section-heading {
@@ -428,7 +431,7 @@ button:hover {
     padding-left: 5px;
     padding-right: 5px;
 }
-/*
+
 .service-item {
     margin-bottom: 10px;
     padding: 50px;
@@ -440,18 +443,6 @@ button:hover {
     backdrop-filter: blur(2rem);
     filter: drop-shadow(2px 4px 6px black);
 
-}*/
-.service-item {
-    margin-bottom: 10px;
-    padding: 50px;
-    background-color: #2dacb3;
-    transition: all 0.5s;
-    height: 350px;
-    font-family: 'Lato';
-    border-radius: 2rem;
-    backdrop-filter: blur(2rem);
-    filter: drop-shadow(2px 4px 6px #208ac7);
-    box-shadow: 0 0 5px 5px #09ca9d99;
 }
 
 .service-item h4 {
@@ -515,19 +506,9 @@ button:hover {
 .service-item:hover .fourth-service-icon {
     background-image: url(../images/fourth-main-icon.png);
 }
-.about-me{
-	background: #029cb5;
-    filter: drop-shadow(2px 4px 6px black);
-	
-}
+
 
 /* My Work */
-
-.my-work{
-	filter: drop-shadow(2px 4px 6px black);
-	background:background: linear-gradient(45deg, #746c6c, transparent);
-	
-}
 
 section.my-work .section-heading {
     text-align: center;
@@ -739,16 +720,6 @@ section.contact-me {
 	border-radius: 50px;
 }
 
-@media screen and (max-width: 1680px) {
-
-    .section {
-        color: #fff;
-        width: 65%;
-        right: 5%;
-        left: 30%;
-    }
-}
-
 @media screen and (max-width: 1680px) and (min-width: 846px) { 
     .menu .social-network ul li a {
         width: 36px;
@@ -763,13 +734,6 @@ section.contact-me {
     .menu .image {
         margin-top: 60px;
     }
-}
-
-@media screen and (min-width:1295px){
-	figure{
-		height:350px!important;
-	}
-	
 }
 
 @media screen and (min-width:845px){
