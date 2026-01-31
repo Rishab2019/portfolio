@@ -1,186 +1,151 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <meta name="description" content="Rishab Tyagi Front-End Developer Portfolio" />
-  <meta name="author" content="Rishab Tyagi" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"/>
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"/>
-  <title>Rishab Tyagi | Front-End Developer</title>
+    <title>Portfolio</title>
 
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/fontawesome.css"/>
-  <link rel="stylesheet" href="assets/css/portfolio.css"/>
-  <link rel="stylesheet" href="assets/css/owl.css"/>
-  <link rel="stylesheet" href="assets/css/lightbox.css"/>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="assets/css/portfolio.css"/>
+    <link rel="stylesheet" href="assets/css/owl.css"/>
+    <link rel="stylesheet" href="assets/css/lightbox.css"/>
+  </head>
 
-  <style>
-    .st0{fill:none;stroke:black;stroke-miterlimit:10}
-    svg{width:auto;height:auto;margin-right:-100px;margin-top:-20px;}
-    path{
-      stroke-dashoffset:-8979;
-      stroke-dasharray:8979;
-      stroke-width:4;
-      animation:draw 5s reverse infinite;
-    }
-    @keyframes draw{
-      from{stroke-dashoffset:0;}
-      to{stroke-dashoffset:8979;}
-    }
-  </style>
-</head>
+  <body>
+    <div id="page-wraper">
 
-<body>
-<div id="page-wraper">
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/Rishabimg.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Rishab Tyagi</h4>
+              <span>Web Designer</span>
+            </div>
 
-<!-- Sidebar -->
-<div class="responsive-nav">
-  <i class="fa fa-bars" id="menu-toggle"></i>
-  <div id="menu" class="menu" style="background:url(assets/images/ssbg.png);background-position:top right;">
-    <i class="fa fa-times" id="menu-close"></i>
-    <div class="container">
-      <div class="image">
-        <img src="assets/images/Rishabimg.jpg" alt="Rishab Tyagi">
+            <nav class="main-nav">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+
+            <div class="copyright-text">
+              <p>Copyright 2021 My Design</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="author-content">
-        <h4>Rishab Tyagi</h4>
-        <span>Front-End Developer</span>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-menu">
-          <li><a href="#section1">About Me</a></li>
-          <li><a href="#section2">What I’m good at</a></li>
-          <li><a href="#section3">My Work</a></li>
-          <li><a href="#section4">Contact Me</a></li>
-        </ul>
-      </nav>
-      <div class="copyright-text">
-        <p>© 2024 Rishab Tyagi</p>
-      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <h1>Hello, I am a front-end Developer</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <img src="assets/images/leftimage.png">
+            </div>
+            <div class="col-md-6">
+              <h4>A bit about me</h4>
+              <p>
+                Hello there! I'm Rishab, a front-end web developer.I have a deep understanding of front-end design principles.I am very comfortable with the core technologies HTML, CSS, JavaScript and Bootstrap.I have completed my BTECH degree in 2021 and I have been working as a Software Engineer since then.I love designing websites.I'm best known as a tech guru among my colleagues.
+              </p>
+              <a href="#section4">Hire Me!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What I’m good at?</h2>
+            <span>
+              I've been learning web development for about 1 year now and I'm always eager to learn more in this fast-paced industry.
+            </span>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h4>CREATIVE IDEAS</h4>
+              <p>
+                There are many creative ideas that come to mind every day.I try to implement these ideas regularly.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <h4>WEBSITE DESIGN</h4>
+              <p>
+                HTML5, CSS3, JavaScript, Bootstrap, WordPress, React, Git, AWS, DevOps, SQL
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <h4>PROGRAMMING</h4>
+              <p>
+                I know programming languages such as C, C++, and Java.I have a good understanding of OOPS concepts.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <h4>DEPLOYMENT</h4>
+              <p>
+                Whether it's development or deployment, I have it covered.I am also skilled in Linux, Git, GitHub, AWS and DevOps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Work</h2>
+            <span>These are the projects on which I have worked.</span>
+          </div>
+
+          <h4>Plantae Store</h4>
+          <p>
+            The idea behind this project is to connect all the local nurseries with customers and deliver plants from their nearest nursery.The tech stack used is Node.js, Express and MongoDB.
+          </p>
+
+          <h4>Kendriya Vidyalaya</h4>
+          <p>
+            This is a static website built using HTML, CSS and JavaScript.This is my current project.
+          </p>
+
+          <h4>Stylish Menu</h4>
+          <p>
+            This is a stylish menu designed using HTML and CSS only.This is a mockup.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <span>
+              I would love to work with you.I am currently available for freelancing and hiring opportunities.Feel free to contact me.
+            </span>
+          </div>
+        </div>
+      </section>
+
     </div>
-  </div>
-</div>
-
-<!-- About -->
-<section class="section about-me" data-section="section1">
-  <div class="container">
-    <div class="section-heading">
-      <h2>About Me</h2>
-      <h1 class="front-end">
-        Hello, I’m a Front-End
-        <span class="typewrite" data-period="2000" data-type='["Developer","UI Designer"]'>
-          <span class="wrap"></span>
-        </span>
-      </h1>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <img src="assets/images/leftimage.png" alt="Frontend Development">
-      </div>
-      <div class="col-md-6">
-        <h4>A bit about me</h4>
-        <p>
-          Hello! I’m Rishab, a Front-End Web Developer with a good understanding of modern UI and UX design principles.
-          I enjoy building clean, responsive, and user-friendly web interfaces.
-          <br><br>
-          I work comfortably with HTML, CSS, JavaScript, and Bootstrap, and I like turning ideas into functional and visually appealing websites.
-          I completed my B.Tech in Computer Science in 2021 and have been working as a Software Engineer since then.
-          <br><br>
-          I enjoy designing websites that are easy to use and visually clear, and I often help teammates with frontend and UI-related tasks.
-        </p>
-        <a href="#section4" class="button">Hire Me!</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Services -->
-<section class="section my-services" data-section="section2">
-  <div class="container">
-    <h2>What I’m good at?</h2>
-    <p>
-      I have been working in web development for a few years and continue to improve my skills by learning new tools and following best practices.
-    </p>
-
-    <div class="row">
-      <div class="col-md-6">
-        <h4>Creative Ideas</h4>
-        <p>
-          I enjoy coming up with creative ideas and turning them into practical and visually pleasing web solutions.
-        </p>
-      </div>
-
-      <div class="col-md-6">
-        <h4>Website Design</h4>
-        <p>
-          HTML5, CSS3, JavaScript, Bootstrap, React, WordPress, Git, AWS basics, DevOps basics, SQL
-        </p>
-      </div>
-
-      <div class="col-md-6">
-        <h4>Programming</h4>
-        <p>
-          I have knowledge of C, C++, and Java, with a good understanding of Object-Oriented Programming (OOPS) concepts.
-        </p>
-      </div>
-
-      <div class="col-md-6">
-        <h4>Deployment</h4>
-        <p>
-          I can handle development and basic deployment tasks using Linux, Git, GitHub, AWS, and DevOps tools.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Work -->
-<section class="section my-work" data-section="section3">
-  <div class="container">
-    <h2>My Work</h2>
-    <p>Here are some of the projects I have worked on.</p>
-
-    <h4>Plantae Store</h4>
-    <p>
-      This project connects local plant nurseries with customers and delivers plants from the nearest nursery.
-      It is built using Node.js, Express, and MongoDB.
-    </p>
-
-    <h4>Kendriya Vidyalaya</h4>
-    <p>
-      A static website built using HTML, CSS, and JavaScript, focusing on clean design and responsive layout.
-    </p>
-
-    <h4>Stylish Menu</h4>
-    <p>
-      A stylish menu UI created using only HTML and CSS, focusing on layout and visual appearance.
-    </p>
-  </div>
-</section>
-
-<!-- Contact -->
-<section class="section contact-me" data-section="section4">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>
-      I am available for freelance work and job opportunities.
-      If you have a project or would like to connect, feel free to reach out.
-    </p>
-  </div>
-</section>
-
-</div>
-
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/jquery/tilt.jquery.js"></script>
-<script src="assets/js/isotope.min.js"></script>
-<script src="assets/js/owl-carousel.js"></script>
-<script src="assets/js/lightbox.js"></script>
-<script src="assets/js/custom.js"></script>
-</body>
+  </body>
 </html>
-```
