@@ -9,19 +9,53 @@
 
     <title>Portfolio</title>
 
+    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css"/>
     <link rel="stylesheet" href="assets/css/portfolio.css"/>
     <link rel="stylesheet" href="assets/css/owl.css"/>
     <link rel="stylesheet" href="assets/css/lightbox.css"/>
+	<style>
+    .st0{fill:none;stroke:black;stroke-miterlimit:10}
+    svg{
+  width:auto;
+  height:auto;
+  margin-right:-100px;
+  margin-top:-20px;
+  
+}
+path{
+  
+  stroke-dashoffset:-8979;
+  stroke-dasharray: 8979;
+  stroke-width:4;
+  animation:draw 5s reverse infinite;
+  align:left;
+ 
+    
+    
+}
+
+@keyframes draw{
+  from{
+    stroke-dashoffset: 0;
+  }
+  to{
+   stroke-dashoffset: 8979;
+  }
+  
+}
+  </style>
   </head>
 
   <body>
     <div id="page-wraper">
-
+      <!-- Sidebar Menu -->
       <div class="responsive-nav">
         <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
+        <div id="menu" class="menu" style="background: url(assets/images/ssbg.png); background-position: top right; box-shadow: 0px 0px 1px;">
           <i class="fa fa-times" id="menu-close"></i>
           <div class="container">
             <div class="image">
@@ -31,8 +65,7 @@
               <h4>Rishab Tyagi</h4>
               <span>Web Designer</span>
             </div>
-
-            <nav class="main-nav">
+            <nav class="main-nav" role="navigation">
               <ul class="main-menu">
                 <li><a href="#section1">About Me</a></li>
                 <li><a href="#section2">What I’m good at</a></li>
@@ -40,7 +73,20 @@
                 <li><a href="#section4">Contact Me</a></li>
               </ul>
             </nav>
-
+            <div class="social-network">
+              <ul class="soial-icons">
+                
+                <li>
+                  <a href="https://twitter.com/rishab20192"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/rishab-tyagi-16539010b/"><i class="fa fa-linkedin"></i></a>
+                </li>
+				<li>
+                  <a href="https://stackoverflow.com/users/13298900/rishab-tyagi"><i class="fa fa-stack-overflow"></i></a>
+                </li>
+              </ul>
+            </div>
             <div class="copyright-text">
               <p>Copyright 2021 My Design</p>
             </div>
@@ -52,19 +98,32 @@
         <div class="container">
           <div class="section-heading">
             <h2>About Me</h2>
-            <h1>Hello, I am a front-end Developer</h1>
+           	<div class="app">
+					<h1 class="front-end">Hello, I am a front-end
+						<div class="typewrite" data-period="2000" data-type='[ "Developer","Designer" ]'>
+						<span class="wrap"></span>
+						</div>
+					</h1>
+				</div>
+				<div class="bulb" style="width: 50px; height: 50px; <!-background: linear-gradient(70deg,snow,#ffffff96)-!>;background: linear-gradient(90deg,gold 10%,yellow 80%); border-radius: 50%; box-shadow: 0px 0px 50px 0px;"></div>
           </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <img src="assets/images/leftimage.png">
-            </div>
-            <div class="col-md-6">
-              <h4>A bit about me</h4>
-              <p>
-                Hello there! I'm Rishab, a front-end web developer.I have a deep understanding of front-end design principles.I am very comfortable with the core technologies HTML, CSS, JavaScript and Bootstrap.I have completed my BTECH degree in 2021 and I have been working as a Software Engineer since then.I love designing websites.I'm best known as a tech guru among my colleagues.
-              </p>
-              <a href="#section4">Hire Me!</a>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                 <img src="assets/images/leftimage.png">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text" data-tilt>
+                  <h4>A bit about me</h4>
+                  <p>
+                    Hello there! I'm Rishab, a front-end web developer.I have a deep understanding of front-end design principles.I am very comfortable with the core technologies HTML, CSS, JavaScript and Bootstrap.I have completed my BTECH degree in 2021 and I am working as a Software Engineer since then.I love designing websites.I'm best known as a tech guru in my collegues.
+                  </p>
+                  <div class="white-button">
+                    <a href="#s4">Hire Me!</a>
+							
+              </div>
             </div>
           </div>
         </div>
@@ -74,38 +133,46 @@
         <div class="container">
           <div class="section-heading">
             <h2>What I’m good at?</h2>
-            <span>
-              I've been learning web development for about 1 year now and I'm always eager to learn more in this fast-paced industry.
-            </span>
+            <div class="line-dec"></div>
+            <span
+              >I've been learning web development for about 1 year now and I'm always eager to learn more in this fast paced industry.</span>
           </div>
-
           <div class="row">
             <div class="col-md-6">
-              <h4>CREATIVE IDEAS</h4>
-              <p>
-                There are many creative ideas that come to mind every day.I try to implement these ideas regularly.
-              </p>
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>CREATIVE IDEAS</h4>
+                <p>
+                  There are many creative ideas that come into the mind everyday.I try to implement these ideas all day.
+                </p>
+              </div>
             </div>
-
             <div class="col-md-6">
-              <h4>WEBSITE DESIGN</h4>
-              <p>
-                HTML5, CSS3, JavaScript, Bootstrap, WordPress, React, Git, AWS, DevOps, SQL
-              </p>
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>WEBSITE DESIGN</h4>
+                <p>
+                  HTML5, CSS3, JavaScript, Bootstrap, WordPress, React, GIT, AWS, DEVOPS, SQL
+                </p>
+              </div>
             </div>
-
             <div class="col-md-6">
-              <h4>PROGRAMMING</h4>
-              <p>
-                I know programming languages such as C, C++, and Java.I have a good understanding of OOPS concepts.
-              </p>
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>PROGRAMMING</h4>
+                <p>
+                  I know programming languages such as c, c++, java.I have good understanding of OOPS concepts.
+                </p>
+              </div>
             </div>
-
             <div class="col-md-6">
-              <h4>DEPLOYMENT</h4>
-              <p>
-                Whether it's development or deployment, I have it covered.I am also skilled in Linux, Git, GitHub, AWS and DevOps.
-              </p>
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>DEPLOYMENT</h4>
+                <p>
+                  Whether it's Development or Deployment, I have got it all covered.I am also skilled in Linux, Git, Github, AWS and DEVOPS.
+                </p>
+              </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
             </div>
           </div>
         </div>
@@ -115,37 +182,49 @@
         <div class="container">
           <div class="section-heading">
             <h2>My Work</h2>
+            <div class="line-dec"></div>
             <span>These are the projects on which I have worked.</span>
           </div>
-
-          <h4>Plantae Store</h4>
-          <p>
-            The idea behind this project is to connect all the local nurseries with customers and deliver plants from their nearest nursery.The tech stack used is Node.js, Express and MongoDB.
-          </p>
-
-          <h4>Kendriya Vidyalaya</h4>
-          <p>
-            This is a static website built using HTML, CSS and JavaScript.This is my current project.
-          </p>
-
-          <h4>Stylish Menu</h4>
-          <p>
-            This is a stylish menu designed using HTML and CSS only.This is a mockup.
-          </p>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label><input type="radio" data-type="*" checked="" name="isotope-filter"/>
+                  <span>all</span></label>
+                <label><input type="radio" data-type="company" name="isotope-filter"/>
+                  <span>Company projects</span></label>
+                <label><input type="radio" data-type="college" name="isotope-filter"/>
+                  <span>College project</span></label>
+                <label><input type="radio" data-type="personal" name="isotope-filter"/>
+                  <span>Personal projects</span></label>
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="college">
+                  <figure class="snip1321">
+                    <img src="assets/images/portfolio-01.png" alt="sq-sample26"/>
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-01.png">
+						<i class="fa fa-search" onclick="location.href='https://plantaeapp.onrender.com/'; return false;">VISIT</i></a>
+                      <h4>Plantae Store</h4>
+                      <span>The idea behind this project is to connect all the local nurseries with the customers and deliver the plants to the customer from their nearest nursery.The tech stack used is node js, express and mongo DB.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section contact-me" data-section="section4">
+      <section id="s4" class="section contact-me" data-section="section4">
         <div class="container">
           <div class="section-heading">
             <h2>Contact Me</h2>
-            <span>
-              I would love to work with you.I am currently available for freelancing and hiring opportunities.Feel free to contact me.
-            </span>
+            <div class="line-dec"></div>
+            <span>I would love to work with you. I am currently available for freelancing and hiring opportunities. Whether you are starting a project, have business inquiries or just want to say hi, my inbox is always open so feel free.</span>
           </div>
         </div>
       </section>
-
     </div>
   </body>
 </html>
