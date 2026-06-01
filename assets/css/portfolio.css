@@ -876,18 +876,17 @@ section.contact-me {
         left: 3%;
     }
     .isotope-item {
-        width: 94%;
-        margin: 3%;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        border-bottom: none;
+        text-align: center;
     }
     .left-image-post img {
         margin-bottom: 30px;
     }
     .right-image-post img {
         margin-top: 30px;
-    }
-    .isotope-item {
-        border-bottom: none;
-        text-align: center;
     }
     .isotope-toolbar {
         margin-bottom: 20px;
