@@ -66,6 +66,11 @@
       layoutMode: "masonry"
     });
 
+    // Reinitialize isotope on window load to properly layout items
+    $(window).on("load", function() {
+      $isotope.isotope("reloadItems").isotope();
+    });
+
     $(this).on("change", filter);
     filter();
   });
@@ -75,5 +80,4 @@
     wrapAround: true
   });
 })(jQuery);
-
 
