@@ -498,6 +498,7 @@ section.my-services .service-item:hover {
     height: 100%;
     filter: brightness(1);
 } 
+
 .service-item:hover .first-service-icon {
     background-image: url(../images/first-main-icon.png);
 }
