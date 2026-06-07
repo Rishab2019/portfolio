@@ -944,8 +944,6 @@ section.my-services h4 {
     color: #38bdf8 !important;
 }
 
-/* REMOVE ALL MOTION AS REQUESTED */
-/* Motion re-enabled */
 
 /* TYPEWRITER CURSOR REMOVAL */
 .typewrite, .typewrite > span, .wrap {
@@ -975,7 +973,6 @@ section.my-services h4 {
 }
 
 
-/* revert-stable-layout */
 
 /* 1. Standardize the height of the H1 to prevent layout shifts */
 section.about-me h1.front-end {
@@ -983,7 +980,7 @@ section.about-me h1.front-end {
     display: block !important;
     min-height: 2.4em !important; /* Fixed height for 2 lines to prevent jumping */
     line-height: 1.2 !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
     /* overflow: hidden !important; */
 }
 
