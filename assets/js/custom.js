@@ -1,3 +1,21 @@
+(function() {
+    const menu = document.querySelector('#menu');
+    const toggle = document.querySelector('#menu-toggle');
+
+    if (menu) {
+        document.addEventListener('click', (event) => {
+            if (menu.classList.contains('open')) {
+                if (
+                    !menu.contains(event.target) &&
+                    (!toggle || !toggle.contains(event.target))
+                ) {
+                    menu.classList.remove('open');
+                }
+            }
+        });
+    }
+})();
+
 (function($) {
   var toggle = document.getElementById("menu-toggle");
   var menu = document.getElementById("menu");
