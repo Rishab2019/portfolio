@@ -488,6 +488,7 @@ button:hover {
 .service-item .first-service-icon {
     background-image: url(../images/first-white-icon.png);
 }
+
 /* Services card hover */
 section.my-services .col-md-6 > div:hover,
 section.my-services .service-item:hover {
