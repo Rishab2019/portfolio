@@ -488,7 +488,15 @@ button:hover {
 .service-item .first-service-icon {
     background-image: url(../images/first-white-icon.png);
 }
-
+/* Services card hover */
+section.my-services .col-md-6 > div:hover,
+section.my-services .service-item:hover {
+    background: #1e293b1a;
+    border-radius: 12px;
+    padding: 30px;
+    height: 100%;
+    filter: brightness(1);
+}
 .service-item:hover .first-service-icon {
     background-image: url(../images/first-main-icon.png);
 }
