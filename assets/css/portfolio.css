@@ -126,7 +126,7 @@ html {
 }
 
 .main-nav li:last-child a {
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
 }
 
 .main-nav li {
@@ -136,18 +136,18 @@ html {
 .main-nav li a {
     height: 70px;
     line-height: 70px;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 16px;
     font-weight: 700;
     color: #fff;
     width: 100%;
     transition: all 0.5s;
-    border-top: 2px solid #fff;
+    /* border-top: 2px solid #fff; */
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: #fff;
+    /* background: #fff; */
     color: #8c363e;
 }
 
@@ -427,6 +427,7 @@ button:hover {
 .my-services .col-md-6 {
     padding-left: 5px;
     padding-right: 5px;
+    margin: 15px;
 }
 /*
 .service-item {
@@ -607,7 +608,7 @@ section.my-work .section-heading {
 }
 
 figure.snip1321 {
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
   -webkit-perspective: 50em;
   perspective: 50em;
@@ -620,11 +621,17 @@ figure.snip1321 * {
 }
 figure.snip1321 figcaption {
   top: 50%;
-  left: 20px;
-  right: 20px;
+  /* left: 20px; */
+  /* right: 20px; */
+  px; */
+  px; */
+  position: absolute;
   position: absolute;
   opacity: 0;
   z-index: 1;
+  /* margin: 80px; */
+  /* padding: 80px; */
+  /* width: 100%; */
 }
 figure.snip1321 h4 {
     margin-top: 15px;
@@ -654,10 +661,11 @@ figure.snip1321:after {
   position: absolute;
   content: "";
   display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 80px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   -webkit-transform: rotateX(-90deg);
@@ -891,4 +899,333 @@ section.contact-me {
     .isotope-toolbar {
         margin-bottom: 20px;
     }
+}
+
+
+
+/* ===== Imported changes from updated portfolio ===== */
+
+
+/* modern-core-v2 */
+
+/* FORCE GLOBAL RESET & BACKGROUND */
+html, body {
+    background-color: #0f172a !important;
+    background-image: radial-gradient(rgba(56, 189, 248, 0.2) 1px, transparent 0) !important;
+    background-size: 32px 32px !important;
+    background-attachment: fixed !important;
+    color: #f8fafc !important;
+}
+
+/* TARGET SECTIONS DIRECTLY */
+section.section, 
+div#page-wraper section, 
+.about-me, .my-services, .my-work, .contact-me {
+    background-color: transparent !important;
+    background-image: none !important;
+    color: #f8fafc !important;
+    padding: 80px 0 !important;
+    border: none !important;
+}
+
+/* SECTION 2 ITEMS - CARD LOOK */
+section.my-services .col-md-6 > div,
+section.my-services .service-item {
+    background: #1e293b !important;
+    border: 1px solid #334155 !important;
+    border-radius: 12px !important;
+    padding: 30px !important;
+    height: 100% !important;
+}
+
+section.my-services h4 {
+    color: #38bdf8 !important;
+}
+
+/* REMOVE ALL MOTION AS REQUESTED */
+/* Motion re-enabled */
+
+/* TYPEWRITER CURSOR REMOVAL */
+.typewrite, .typewrite > span, .wrap {
+    border-right: none !important;
+}
+
+/* SIDEBAR FIX */
+#menu {
+    background: #0f172a !important;
+    border-right: none !important;
+}
+
+#menu .main-nav a {
+    color: #94a3b8 !important;
+}
+
+#menu .main-nav li.active a,
+#menu .main-nav a:hover {
+    color: #38bdf8 !important;
+}
+
+
+/* revert-stable-layout */
+
+/* 1. Standardize the height of the H1 to prevent layout shifts */
+section.about-me h1.front-end {
+    display: block !important;
+    min-height: 2.4em !important; /* Fixed height for 2 lines to prevent jumping */
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+    overflow: hidden !important;
+}
+
+/* 2. Ensure the typewriter text is an inline-block that doesn't collapse */
+section.about-me .typewrite {
+    
+    min-width: 10px !important;
+    vertical-align: bottom !important;
+}
+
+/* 3. Keep the bulb and other elements in normal flow but stable */
+section.about-me .bulb {
+    display: block !important;
+    margin-top: 10px !important;
+    position: static !important;
+    /* Animation allowed */
+    
+}
+
+/* 4. Ensure container spacing is stable */
+section.about-me .section-heading {
+    display: block !important;
+    padding-bottom: 0 !important;
+}
+
+
+/* static-right-text-fix */
+
+/* Restore transitions for a fluid feel, but avoid transforms that cause displacement */
+.right-text, 
+.right-text *,
+.col-md-6,
+.col-md-6 * {
+    transition: all 0.3s ease !important;
+     /* Keep position static to prevent jumping */
+}
+
+/* Allow color-based visual cues instead of movement */
+.right-text h4:hover, 
+.right-text p:hover {
+    color: #38bdf8 !important;
+}
+
+/* Restore button interactivity without displacement */
+.white-button a {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.white-button a:hover {
+    background-color: #7dd3fc !important;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4) !important;
+    
+}
+
+
+/* consolidated-site-improvements */
+/* Consolidated Custom Site Styles */
+
+/* From: section-1-custom-bg */
+
+/* Re-applying a modern, deep-themed background to the first section */
+section.about-me {
+    background-color: #111827 !important; /* Deep charcoal/blue */
+    background-image: 
+        linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)),
+        url('https://www.transparenttextures.com/patterns/dark-matter.png') !important;
+    background-size: cover, auto !important;
+    background-attachment: scroll, fixed !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Subtle overlay to ensure text contrast */
+section.about-me::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: radial-gradient(circle at 70% 30%, rgba(56, 189, 248, 0.1), transparent 50%) !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}
+
+
+/* From: debug-menu-transition */
+
+        #menu {
+            transition: transform 0.5s ease-in-out !important;
+        }
+    
+
+/* From: debug-nav-item-transition */
+
+        .main-menu li a {
+            transition: all 0.3s ease-in-out !important;
+        }
+        .main-menu li a:hover {
+            padding-left: 10px !important;
+            color: #38bdf8 !important;
+        }
+    
+
+/* From: section2-final-styles-v3 */
+
+  /* Consolidated Section 2 Styles - Using standard classes */
+  .service-item {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 0 !important;
+    margin: 15px !important;
+    text-align: left !important;
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    box-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .service-item .service-icon {
+    margin-bottom: 30px !important;
+    display: inline-block !important;
+    width: 70px !important;
+    height: 70px !important;
+    background-color: rgba(14, 165, 233, 0.1) !important;
+    color: #0ea5e9 !important;
+    border-radius: 8px !important;
+    text-align: center !important;
+    line-height: 70px !important;
+    font-size: 32px !important;
+  }
+
+  .service-item h4 {
+    color: #0ea5e9 !important;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.3px !important;
+    line-height: 1.2 !important;
+  }
+
+  .service-item p {
+    color: #ffffff !important;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 15.2px !important;
+    font-weight: 500 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Hover effect */
+  .service-item:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: #0ea5e9 !important;
+    transform: translateY(-5px) !important;
+  }
+
+
+/* From: global-section-dividers */
+
+        section.section {
+            position: relative;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+            padding-bottom: 80px !important;
+            margin-bottom: 80px !important;
+        }
+
+        /* Remove divider from the last section */
+        section.section:last-of-type {
+            border-bottom: none !important;
+            margin-bottom: 0 !important;
+        }
+
+        /* Optional: Add a subtle glow to the divider */
+        section.section::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 10%;
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(56, 189, 248, 0.3), transparent);
+        }
+    
+
+/* From: scrolling-stars-style */
+
+            .scrolling-star {
+                position: fixed;
+                width: 2px;
+                height: 2px;
+                background: white;
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: -1;
+                opacity: 0.8;
+                box-shadow: 0 0 5px white;
+            }
+        
+
+/* From: scrolling-stars-style-fixed */
+
+        .scrolling-star {
+            position: fixed !important;
+            width: 2px !important;
+            height: 2px !important;
+            background: #fff !important;
+            border-radius: 50% !important;
+            pointer-events: none !important;
+            z-index: 1 !important; 
+            opacity: 0.6 !important;
+            box-shadow: 0 0 4px #fff !important;
+        }
+        
+        #page-wraper {
+            position: relative !important;
+            z-index: 2 !important;
+            background: transparent !important;
+        }
+        
+        body {
+            background-attachment: fixed !important;
+        }
+    
+
+
+/* ===== Services 2x2 Layout Fix ===== */
+@media (min-width: 768px) {
+  .my-services .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .my-services .col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    margin: 0 !important;
+    padding: 10px !important;
+  }
+
+  .my-services .service-item {
+    margin: 0 !important;
+    height: 100% !important;
+  }
 }
