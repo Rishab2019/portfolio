@@ -1146,7 +1146,38 @@ section.about-me::before {
     border-color: #0ea5e9 !important;
     transform: translateY(-5px) !important;
   }
+.product-design {
+    background: transparent;
+}
 
+.product-design-card {
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.product-design-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+.product-design-card h4 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.product-design-card p {
+    color: #fff;
+}
+
+.product-design-card .white-button a {
+    display: inline-block;
+    min-width: 220px;
+    text-align: center;
+}
 
 /* From: global-section-dividers */
 
